@@ -44,7 +44,7 @@ RUN mv composer.phar /usr/local/bin/composer
 RUN chown www-data:www-data /usr/local/bin/composer
 
 # Install Node
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y nodejs
 
 # Setup xdebug
